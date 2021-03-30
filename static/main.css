@@ -1,0 +1,32 @@
+.logo_box {
+  position: relative;
+  background-color: #8b0000;
+  width: 125px;
+  height: 125px;
+  border-radius: 20px;
+}
+
+.logo_border {
+  border-radius: 21px;
+  border: 2px solid #ffd000;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo_main {
+  font-size: 75px;
+  color: #ffd000;
+  margin-top: -2%;
+  text-align: center;
+}
+
+.logo_sub {
+  font-size: 16px;
+  color: #ffd000;
+  margin-top: -6%;
+  text-align: center;
+}
