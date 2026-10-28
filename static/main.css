@@ -25,7 +25,11 @@ header {
 .header-icon {
   width: 32px;
   height: 32px;
+  max-width: 32px;
+  max-height: 32px;
   border-radius: 4px;
+  flex-shrink: 0; /* Prevents Firefox flexbox from squishing or growing the icon */
+  display: block; /* Firefox SVG alignment fix */
   background-color: #333;
 }
 
