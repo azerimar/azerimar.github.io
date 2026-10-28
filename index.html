@@ -1,11 +1,61 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="static/main.css">
-  </head>
-  <div class=logo_box>
-    <div class=logo_border>
-      <div class=logo_main>Az</div>
-      <div class=logo_sub>Azerimar</div>
-    </div>
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+
+  <header>
+    <!-- Placeholder SVG icon; replace with an <img> tag if using an image file -->
+    <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+      <circle cx="12" cy="7" r="4"></circle>
+    </svg>
+  </header>
+
+  <div class="container">
+    <nav>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:me@me.com">me@me.com</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="resume-header">
+        <a href="resume.pdf" download="Resume.pdf" class="download-btn">Download PDF</a>
+      </div>
+
+      <article class="resume-card">
+        <h1>Your Name</h1>
+        <p>Title / Role</p>
+
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="job-title">Senior Role — Company Name</div>
+          <div class="job-date">2022 – Present</div>
+          <p>Description of responsibilities, achievements, and technical details.</p>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Previous Role — Company Name</div>
+          <div class="job-date">2019 – 2022</div>
+          <p>Description of responsibilities, achievements, and technical details.</p>
+        </div>
+
+        <h2>Education</h2>
+        <p>Degree / Field of Study — Institution</p>
+
+        <h2>Skills</h2>
+        <p>Skill 1, Skill 2, Skill 3, Skill 4</p>
+      </article>
+    </main>
   </div>
+
+</body>
 </html>
