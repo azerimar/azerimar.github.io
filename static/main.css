@@ -1,32 +1,146 @@
-.logo_box {
-  position: relative;
-  background-color: #8b0000;
-  width: 125px;
-  height: 125px;
-  border-radius: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.logo_border {
-  border-radius: 21px;
-  border: 2px solid #ffd000;
-  width: 90%;
-  height: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.logo_main {
-  font-size: 75px;
-  color: #ffd000;
-  margin-top: -2%;
-  text-align: center;
+/* Header */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
 }
 
-.logo_sub {
-  font-size: 16px;
-  color: #ffd000;
-  margin-top: -6%;
-  text-align: center;
+.header-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #333;
+}
+
+/* Layout Structure */
+.container {
+  display: flex;
+  flex: 1;
+}
+
+/* Left Navigation Column */
+nav {
+  width: 240px;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px;
+  flex-shrink: 0;
+}
+
+nav h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 8px;
+}
+
+nav a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  padding: 32px;
+  max-width: 900px;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #0066cc;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.download-btn:hover {
+  background-color: #0052a3;
+}
+
+.resume-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+.resume-card h1 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.resume-card h2 {
+  font-size: 1.25rem;
+  color: #555;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
+
+.job {
+  margin-bottom: 16px;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.job-date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
 }
